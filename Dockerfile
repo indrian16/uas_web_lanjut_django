@@ -9,6 +9,7 @@ RUN pip install -r requirements.txt
 RUN pip install gunicorn
 RUN pip install urllib3
 RUN pip install django-sslify
+RUN pip install django-ckeditor
 
 RUN apt update
 
