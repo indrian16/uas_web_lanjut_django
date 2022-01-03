@@ -29,7 +29,7 @@
                                     <td>{{forloop.counter}}</td>
                                     <td>{{article.user}}</td>
                                     <td>{{article.title}}</td>
-                                    <td>{{article.body}}</td>
+                                    <td>{{article.body|safe|truncatechars:100}}</td>
                                     <td>{{article.category}}</td>
                                     <td>{{article.date}}</td>
                                     <td>
