@@ -3,124 +3,102 @@
 
 {% block content %}
 
-<div class="page-header page-header-small" style="background-image: url('{% static 'front/img/sections/gerrit-vermeulen.jpg' %}');">
-    <div class="filter filter-danger"></div>
-    <div class="content-center">
-      <div class="container">
-        <h1>Hello, <br /> We are Creative Tim.</h1>
-        <h3>Let us tell you more about what we do.</h3>
-      </div>
-    </div>
-  </div>
-  <div class="main">
-    <div class="section">
-      <div class="container">
-        <h3 class="title-uppercase">We build great products.</h3>
-        <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-        <p>Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions. </p>
-        <h3 class="title-uppercase">We <i class="fa fa-heart heart"></i>&nbsp; what we do.</h3>
-        <p>Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
-        <h2 class="text-center creators">Creators</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card card-profile card-plain">
-              <div class="card-body">
-                <div class="card-avatar">
-                  <a href="#avatar">
-                    <img src="{% static 'front/img/faces/ayo-ogunseinde-2.jpg' %}" alt="...">
-                    <h4 class="card-title">Eric Thomson</h4>
-                  </a>
-                </div>
-                <p class="card-description text-center">
-                  A group becomes a team when each member is sure enough of himself and his contribution to praise the skill of the others. No one can whistle a symphony. It takes orchestra to play it.
-                </p>
-              </div>
-              <div class="card-footer text-center">
-                <a href="#pablo" class="btn btn-just-icon btn-linkedin"><i class="fa fa-linkedin"></i></a>
-                <a href="#pablo" class="btn btn-just-icon btn-dribbble"><i class="fa fa-dribbble"></i></a>
-                <a href="#pablo" class="btn btn-just-icon btn-instagram"><i class="fa fa-instagram"></i></a>
-              </div>
+<div class="wrapper" style="padding-top: 4%">
+  <div class="profile-content section">
+    <div class="container">
+      <div class="row">
+        <div class="profile-picture">
+          <div class="fileinput fileinput-new" data-provides="fileinput">
+            <div class="fileinput-new img-no-padding">
+              <img src="{% static 'front/img/faces/indrian.jpg' %}" alt="...">
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card-profile card-plain">
-              <div class="card-body">
-                <div class="card-avatar">
-                  <a href="#avatar">
-                    <img src="{% static 'front/img/faces/joe-gardner-2.jpg' %}" alt="...">
-                    <h4 class="card-title">Sophia West</h4>
-                  </a>
-                </div>
-                <p class="card-description text-center">
-                  The strength of the team is each individual member. The strength of each member is the team. If you can laugh together, you can work together, silence isn’t golden, it’s deadly.
-                </p>
-              </div>
-              <div class="card-footer text-center">
-                <a href="#pablo" class="btn btn-just-icon btn-linkedin"><i class="fa fa-linkedin"></i></a>
-                <a href="#pablo" class="btn btn-just-icon btn-dribbble"><i class="fa fa-dribbble"></i></a>
-                <a href="#pablo" class="btn btn-just-icon btn-pinterest"><i class="fa fa-pinterest"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card-profile card-plain">
-              <div class="card-body">
-                <div class="card-avatar">
-                  <a href="#avatar">
-                    <img src="{% static 'front/img/faces/clem-onojeghuo-2.jpg' %}" alt="...">
-                    <h4 class="card-title">Lucas Andrew</h4>
-                  </a>
-                </div>
-                <p class="card-description text-center">
-                  Great teams do not hold back with one another. They are unafraid to air their dirty laundry. They admit their mistakes, their weaknesses and their concerns without fear of reprisal.
-                </p>
-              </div>
-              <div class="card-footer text-center">
-                <a href="#pablo" class="btn btn-just-icon btn-youtube"><i class="fa fa-youtube"></i></a>
-                <a href="#pablo" class="btn btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
-                <a href="#pablo" class="btn btn-just-icon btn-instagram"><i class="fa fa-instagram"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <h3 class="more-info">Need more information?</h3>
-        <div class="row coloured-cards">
-          <div class="col-md-4 col-sm-6">
-            <div class="card-big-shadow">
-              <div class="card card-just-text" data-background="color" data-color="blue" data-radius="none">
-                <div class="card-body">
-                  <h6 class="card-category">Best cards</h6>
-                  <h4 class="card-title"><a href="#paper-kit">Blue Card</a></h4>
-                  <p class="card-description">What all of these have in common is that they're pulling information out of the app or the service and making it relevant to the moment. </p>
-                </div>
-              </div> <!-- end card -->
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <div class="card-big-shadow">
-              <div class="card card-just-text" data-background="color" data-color="green" data-radius="none">
-                <div class="card-body">
-                  <h6 class="card-category">Best cards</h6>
-                  <h4 class="card-title"><a href="#paper-kit">Green Card</a></h4>
-                  <p class="card-description">What all of these have in common is that they're pulling information out of the app or the service and making it relevant to the moment. </p>
-                </div>
-              </div> <!-- end card -->
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <div class="card-big-shadow">
-              <div class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
-                <div class="card-body">
-                  <h6 class="card-category">Best cards</h6>
-                  <h4 class="card-title"><a href="#paper-kit">Yellow Card</a></h4>
-                  <p class="card-description">What all of these have in common is that they're pulling information out of the app or the service and making it relevant to the moment. </p>
-                </div>
-              </div> <!-- end card -->
+            <div class="name">
+              <h4 class="title text-center">INDRIAN<br /><small>Android Developer</small></h4>
             </div>
           </div>
         </div>
       </div>
+      <div class="row">
+        <div class="col-md-6 ml-auto mr-auto text-center">
+          <p>Hi, I'm INDRIAN, I've developed mobile apps since 2018, and I'm always honing my skills and knowledge so that I can make professional apps light, beautiful and easy to maintain.</p>
+          <br />
+          <b class="title">NIM: 1911102441003</b>
+          <br />
+          <br />
+          <a class="btn btn-outline-default btn-round" href="https://github.com/indrian16/"><i class="fa fa-github-alt"></i> Open Github</a>
+        </div>
+      </div>
+      <br />
+      <div class="nav-tabs-navigation">
+        <div class="nav-tabs-wrapper">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#follows" role="tab">Follows</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#following" role="tab">Following</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane active" id="follows" role="tabpanel">
+          <div class="row">
+            <div class="col-md-6 ml-auto mr-auto">
+              <ul class="list-unstyled follows">
+                <li>
+                  <div class="row">
+                    <div class="col-md-2 col-3">
+                      <img src="{% static 'front/img/faces/clem-onojeghuo-3.jpg' %}" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                    </div>
+                    <div class="col-md-7 col-4">
+                      <h6>Lincoln<br /><small>Car Producer</small></h6>
+                    </div>
+                    <div class="col-md-3 col-2">
+                      <div class="unfollow">
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" value="" checked>
+                            <span class="form-check-sign"></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <hr />
+                <li>
+                  <div class="row">
+                    <div class="col-md-2 col-3">
+                      <img src="{% static 'front/img/faces/erik-lucatero-2.jpg' %}" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                    </div>
+                    <div class="col-md-7 col-4">
+                      <h6>Banks<br /><small>Singer</small></h6>
+                    </div>
+                    <div class="col-md-3 col-2">
+                      <div class="unfollow">
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" value="">
+                            <span class="form-check-sign"></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane text-center" id="following" role="tabpanel">
+          <h3 class="text-muted">Not following anyone yet :(</h3>
+          <button class="btn btn-warning btn-round">Find artists</button>
+        </div>
+      </div>
     </div>
   </div>
+</div>
 
 {% endblock content %}
