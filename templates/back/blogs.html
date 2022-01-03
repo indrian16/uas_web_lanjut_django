@@ -1,0 +1,50 @@
+{% extends 'back/base.html' %}
+
+{% block content %}
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="toolbar">
+                            <a class="btn btn-sm btn-danger" href="{% url 'add_article' %}">Add Article</a> &nbsp; &nbsp; &nbsp;
+                            <!--Here you can write extra buttons/actions for the toolbar-->
+                        </div>
+                        <table id="bootstrap-table" class="table">
+                            <thead>
+                                <th data-field="state" data-checkbox="true"></th>
+                                <th data-field="no" class="text-center">No</th>
+                                <th data-field="name" data-sortable="true">Name</th>
+                                <th data-field="title" data-sortable="true">Title</th>
+                                <th data-field="body" data-sortable="true">Body</th>
+                                <th data-field="dateogry">Cateogry</th>
+                                <th data-field="date">Date</th>
+                                <th>Actions</th>
+                            </thead>
+                            <tbody>
+                                {% for article in articles %}
+                                <tr>
+                                    <td></td>
+                                    <td>{{forloop.counter}}</td>
+                                    <td>{{article.user}}</td>
+                                    <td>{{article.title}}</td>
+                                    <td>{{article.body}}</td>
+                                    <td>{{article.category}}</td>
+                                    <td>{{article.date}}</td>
+                                    <td>
+                                        <a class="btn btn-sm btn-info" href="{% url 'detail_article' article.id %}">See</a>
+                                        <a class="btn btn-sm btn-warning" href="{% url 'edit_article' article.id %}">Edit</a>
+                                        <a class="btn btn-sm btn-danger" href="{% url 'delete_article' article.id %}">Delete</a>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div><!--  end card  -->
+            </div> <!-- end col-md-12 -->
+        </div> <!-- end row -->
+    </div>
+</div>
+{% endblock content %}
